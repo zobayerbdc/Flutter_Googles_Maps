@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_googles_maps/distances.dart';
-import 'package:flutter_googles_maps/home_screen.dart';
-import 'package:flutter_googles_maps/polygon_area.dart';
+import 'package:flutter_googles_maps/tracking_section_two/location_picker_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,9 +17,12 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: //const HomeMapScreen(),
-          //const HomeScreen(),
-          DistanceApp(),
+      home: //DistanceApp(),
+          LocationPickerScreen(),
+      //TrackingApp(),
+      //GetLatLng(),
+      //HomeScreen(),
+      //PolygonArea(),
     );
   }
 }
