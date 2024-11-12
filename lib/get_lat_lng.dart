@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 
-class HomeMapScreen extends StatefulWidget {
-  const HomeMapScreen({super.key});
+class GetLatLng extends StatefulWidget {
+  const GetLatLng({super.key});
 
   @override
-  State<HomeMapScreen> createState() => _HomeMapScreenState();
+  State<GetLatLng> createState() => _GetLatLngState();
 }
 
-class _HomeMapScreenState extends State<HomeMapScreen> {
+class _GetLatLngState extends State<GetLatLng> {
   Position? _currentPosition;
 
   getCurrentLocations() async {

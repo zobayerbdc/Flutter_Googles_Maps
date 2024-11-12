@@ -73,7 +73,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                 setState(() {
                   stAddress =
-                      "${locations.last.longitude}, ${locations.last.latitude}";
+                      "${locations.last.latitude}, ${locations.last.longitude}";
                   stAdd = placemarks.isNotEmpty
                       ? placemarks.last.country ?? ''
                       : '';
